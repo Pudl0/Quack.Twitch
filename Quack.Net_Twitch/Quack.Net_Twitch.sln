@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quack.Net_Twitch", "Quack.Net_Twitch\Quack.Net_Twitch.csproj", "{1657667C-EA84-4EBA-AD0F-1FB6B819BDCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1657667C-EA84-4EBA-AD0F-1FB6B819BDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1657667C-EA84-4EBA-AD0F-1FB6B819BDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1657667C-EA84-4EBA-AD0F-1FB6B819BDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1657667C-EA84-4EBA-AD0F-1FB6B819BDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0B431A6-07F1-40BD-A7D8-524EFB584417}
+	EndGlobalSection
+EndGlobal

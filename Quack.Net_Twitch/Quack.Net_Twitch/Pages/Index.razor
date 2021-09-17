@@ -1,0 +1,42 @@
+﻿@page "/"
+
+@inject BotConnectionService _botConnectionService
+
+<h1>Hello, my name is Quack!</h1>
+
+<button @onclick="InitializeBot">Hier den Bot initialisieren</button>
+
+<div>
+    <h2>nur_pat</h2>
+    <button @onclick="_ => JoinChannel(PatName)">Join nur_pat</button>
+    <button @onclick="_ => LeaveChannel(PatName)">Leave nur_pat</button>
+</div>
+
+<button @onclick="TestButton">Button Test</button>
+
+@code
+{
+    private const string PatName = "nur_pat";
+
+    public void InitializeBot()
+    {
+        Console.WriteLine("Starting connection process");
+        _botConnectionService.InitializeBot("nur_pat");
+        Console.WriteLine("I should be connected now");
+    }
+
+    public void JoinChannel(string streamerName)
+    {
+        _botConnectionService.ConnectTwitchBotTo(streamerName);
+    }
+
+    public void LeaveChannel(string streamerName)
+    {
+        _botConnectionService.LeaveChannel(streamerName);
+    }
+
+    public void TestButton()
+    {
+        Console.WriteLine("Buttons are working!");
+    }
+}
